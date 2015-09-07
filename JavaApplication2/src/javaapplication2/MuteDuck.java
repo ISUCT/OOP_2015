@@ -8,8 +8,8 @@ package javaapplication2;
  *
  * @author Stud_17
  */
-public class FlyWithWings implements FlyBehavior {
-    public void fly() {
-        System.out.println("I'm flying!!");
+public class MuteDuck  implements QuackBehavior {
+    public void quack() {
+        System.out.println("<< Silence >>");
     }
 }

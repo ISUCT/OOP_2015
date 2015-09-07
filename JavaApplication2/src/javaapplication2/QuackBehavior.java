@@ -8,8 +8,7 @@ package javaapplication2;
  *
  * @author Stud_17
  */
-public class FlyWithWings implements FlyBehavior {
-    public void fly() {
-        System.out.println("I'm flying!!");
-    }
+public interface QuackBehavior {
+    public void quack() ;
+   
 }
