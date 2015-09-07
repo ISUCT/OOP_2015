@@ -9,6 +9,15 @@ package simuduck;
  *
  * @author h
  */
-public class RedheadDuck {
+public class RedheadDuck extends Duck {
+
+    public RedheadDuck(){
+        quackBehavior = new Squeak();
+        flyBehavior = new FlyWithWings();
+    
+    }
+    public void display(){
+        System.out.println("Im a red head duck!");
+    }
     
 }

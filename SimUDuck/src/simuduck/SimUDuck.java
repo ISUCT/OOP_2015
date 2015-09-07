@@ -22,6 +22,11 @@ public class SimUDuck {
         Duck model = new ModelDuck();
         model.performFly();
         model.setFlyBehavior(new FlyRocketPowered());
+        model.performFly();
+        model.setFlyBehavior(new FlyWithWings());
+        model.performFly();
+        model.setFlyBehavior(new FlyNoWay());
+        model.performFly();
     }
     
 }
