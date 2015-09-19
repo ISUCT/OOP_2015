@@ -2,15 +2,14 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package ducks_oop;
+package duck;
 
 /**
  *
  * @author stud_17
  */
-public class FlyWithWings implements FlyBehavior {
+public class FlyNoWay implements FlyBehavior {
     public void fly() {
-        System.out.println("I'm flying!");
+        System.out.println("I can't fly");
     }
-    
 }

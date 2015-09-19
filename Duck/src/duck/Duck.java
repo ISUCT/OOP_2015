@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package ducks_oop;
+package duck;
 
 /**
  *
@@ -23,5 +23,11 @@ public abstract class Duck {
     }
     public void swim() {
         System.out.println("All ducks float, even decoys!");
+    }
+    public void setFlyBehavior (FlyBehavior fb){
+        flyBehavior = fb;
+    }
+    public void setQuackBehavior (QuackBehavior qb){
+        quackBehavior = qb;
     }
 }
