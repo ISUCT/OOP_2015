@@ -8,11 +8,8 @@ package oop_2015.krylova.ea;
  *
  * @author stud_17
  */
-public class ModelDuck extends Duck{
-
-    @Override
-    public void display() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
-    
+public class FlyRocketPowered implements FlyBehavior {
+public void fly() {
+System.out.println("I'm flying with a rocket!");    
+}    
 }
