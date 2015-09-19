@@ -4,6 +4,8 @@
  */
 package oop_2015tsareva;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -41,10 +43,26 @@ public class MallardDuckTest {
      */
     @Test
     public void testDisplay() {
-        System.out.println("display");
-        MallardDuck instance = new MallardDuck();
-        instance.display();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+      ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        PrintStream ps = new PrintStream(baos);
+        System.setOut(ps);
+        Duck mallard = new MallardDuck();
+        
+        mallard.performQuack();
+        assertEquals("Quack!\n", baos.toString());
+        baos.reset();
+        
+        
+        System.setOut(ps);
+        Duck readhead = new RedheadDuck();
+        
+        readhead.performFly();
+        assertEquals("I'm flying!\n", baos.toString());
+        
+        Duck model = new ModelDuck();
+        System.setOut(ps);
+        
+        model.performQuack();
+        assertEquals("Quack!\n", baos.toString());
     }
 }
