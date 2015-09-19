@@ -2,16 +2,18 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package oop_2015tsareva;
+package oop_2015golovkina;
+
+import oop_2015golovkina.QuackBehavior;
 
 /**
  *
  * @author stud_17
  */
-public class MuteQuack implements QuackBehavior{
+public class Squeak implements QuackBehavior {
     @Override
     public void quack(){
-        System.out.println("Squeak!");
+    System.out.println("Squeak!");
     }
     
 }
