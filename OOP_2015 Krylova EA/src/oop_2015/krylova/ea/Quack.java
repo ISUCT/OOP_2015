@@ -9,6 +9,7 @@ package oop_2015.krylova.ea;
  * @author stud_17
  */
 public class Quack implements QuackBehavior  {
+    @Override
  public void quack() {
      System.out.println("Quack");
  }   

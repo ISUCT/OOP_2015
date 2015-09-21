@@ -10,9 +10,15 @@ package oop_2015.krylova.ea;
  */
 public class ModelDuck extends Duck{
 
+   
+    public void Duck() {
+    flyBehavior = new FlyNoWay();
+    quackBehavior = new Quack();
+    }
+
     @Override
     public void display() {
-        throw new UnsupportedOperationException("Not supported yet.");
+    System.out.println("I'm a model duck!");
     }
     
 }
