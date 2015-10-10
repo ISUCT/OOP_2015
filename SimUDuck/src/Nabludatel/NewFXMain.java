@@ -7,20 +7,21 @@ package Nabludatel;
 
 import java.io.IOException;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
+import static javafx.application.Application.launch;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import javafx.scene.layout.Pane;
 
 /**
  *
  * @author h
  */
-public class NewFXMain extends Application {
+public class NewFXMain extends Application  {
+    
+
+      // Value injected by FXMLLoader
+
 
     @Override
     public void start(Stage primaryStage) {
@@ -46,22 +47,29 @@ public class NewFXMain extends Application {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(NewFXMain.class.getResource("demo1.fxml"));
-            AnchorPane pane = (AnchorPane) loader.load();
-            Scene scene = new Scene(pane);
-            primaryStage.setTitle("Hello World!");
+            Pane rootLayout = (Pane) loader.load();
+            
+            Scene scene = new Scene (rootLayout);
             primaryStage.setScene(scene);
             primaryStage.show();
-        } catch (IOException ex) {
-            ex.printStackTrace();
-        }
-
-    }
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+            
+    } catch(IOException ex) {
+        
+        ex.printStackTrace();
+    }}
+    
+        public static void main(String[] args) {
         launch(args);
-    }
-
+        }
+        
 }
+        
+
+    
+
+
+    
+    
+ 
+
+
