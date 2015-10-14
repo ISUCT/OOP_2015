@@ -6,13 +6,9 @@ package Observer;
 
 import java.io.IOException;
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 /**
@@ -42,7 +38,7 @@ public class NewFXMain extends Application {
 //        primaryStage.show();
         try{
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(NewFXMain.class.getResource("demo.fxml"));
+            loader.setLocation(NewFXMain.class.getResource("DEMO.fxml"));
             Pane rootLayout = (Pane) loader.load();
             Scene scene = new Scene(rootLayout);
             primaryStage.setScene(scene);
