@@ -43,7 +43,7 @@ public class NewFXMain extends Application {
         try {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(NewFXMain.class.getResource("demo.fxml"));
-            Button rootLayout = (Button) loader.load();
+            Pane rootLayout = (Pane) loader.load();
 
             Scene scene = new Scene(rootLayout);
             primaryStage.setScene(scene);
