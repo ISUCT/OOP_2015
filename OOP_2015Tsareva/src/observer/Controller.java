@@ -18,13 +18,7 @@ import javafx.scene.control.Button;
  */
 public class Controller implements Initializable {
 
-    public static void main(String[] args) {
-        launch(args);
-    }
 
-    private static void launch(String[] args) {
-        throw new UnsupportedOperationException("Not yet implemented");
-    }
     @FXML
     private Button myButton;
 
@@ -32,18 +26,12 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         assert myButton != null : "fx:id was not injected";
 
-//        myButton.setOnAction(new EventHandler<ActionEvent>() {
-//            @Override
-//            public void handle(ActionEvent event) {
-//                System.out.println("Hello World");
-//            }
-//        });
         myButton.setOnAction(new EventHandler<ActionEvent>() {
-
             @Override
-            public void handle(ActionEvent t) {
-                throw new UnsupportedOperationException("Not supported yet.");
+            public void handle(ActionEvent event) {
+                System.out.println("Hello World");
             }
         });
+
     }
 }
