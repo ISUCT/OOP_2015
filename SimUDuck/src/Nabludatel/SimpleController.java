@@ -5,6 +5,8 @@
  */
 package Nabludatel;
 
+import WeatherData.DisplayElement;
+import WeatherData.Observer;
 import java.net.URL;
 import java.util.ResourceBundle;
 import static javafx.application.Application.launch;
@@ -18,7 +20,7 @@ import javafx.scene.control.Button;
  *
  * @author h
  */
-public class SimpleController implements Initializable {
+public class SimpleController implements Initializable, Observer, DisplayElement {
     public static void main(String[] args) {
         launch(args);
         }
@@ -38,8 +40,19 @@ public class SimpleController implements Initializable {
              }
          
          });
+         
              
     
+    }
+
+    @Override
+    public void update(float temp, float humidity, float pressure) {
+       
+    }
+
+    @Override
+    public void display() {
+        
     }
          
          

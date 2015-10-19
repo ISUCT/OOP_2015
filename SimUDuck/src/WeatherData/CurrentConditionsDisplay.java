@@ -5,6 +5,13 @@
  */
 package WeatherData;
 
+import Nabludatel.NewFXMain;
+import java.io.IOException;
+import static javafx.application.Application.launch;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+
 /**
  *
  * @author h
@@ -25,6 +32,7 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement {
             
     public void display(){
         System.out.println("Current condotions: " + temperature + " F degrees and " + humidity +  "% humidity");
+        
         
     
     }
