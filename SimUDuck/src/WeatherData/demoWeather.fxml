@@ -6,11 +6,11 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0000999999975" prefWidth="358.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0000999999975" prefWidth="358.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WeatherData.ControllerWeather">
   <children>
-    <Label layoutX="28.0" layoutY="56.0" prefHeight="51.0" prefWidth="118.0" text="Temperature" textFill="#330000" />
-    <Label layoutX="28.0" layoutY="156.0" prefHeight="51.0" prefWidth="118.0" text="Humidity" />
-    <Label layoutX="224.0" layoutY="64.0" prefHeight="35.0" prefWidth="104.0" text="Label" />
-    <Label layoutX="224.0" layoutY="164.0" prefHeight="35.0" prefWidth="104.0" text="Label" />
+    <Label fx:id="Label1" layoutX="28.0" layoutY="56.0" prefHeight="51.0" prefWidth="118.0" text="Temperature" textFill="#330000" />
+    <Label fx:id="Label2" layoutX="28.0" layoutY="156.0" prefHeight="51.0" prefWidth="118.0" text="Humidity" />
+    <Label fx:id="LabelTemp" layoutX="224.0" layoutY="64.0" prefHeight="35.0" prefWidth="104.0" />
+    <Label fx:id="LabelNum" layoutX="224.0" layoutY="164.0" prefHeight="35.0" prefWidth="104.0" />
   </children>
 </AnchorPane>
