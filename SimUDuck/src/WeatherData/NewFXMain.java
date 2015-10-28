@@ -19,7 +19,7 @@ import javafx.stage.Stage;
  * @author h
  */
 public class NewFXMain extends Application {
-
+ControllerWeather controllerWeather;
     @Override
     public void start(Stage primaryStage) {
 
@@ -27,7 +27,7 @@ public class NewFXMain extends Application {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(NewFXMain.class.getResource("demoWeather.fxml"));
             AnchorPane rootLayout = (AnchorPane) loader.load();
-            loader.getController();
+            controllerWeather = loader.getController();
             Scene scene = new Scene(rootLayout);
             primaryStage.setScene(scene);
             primaryStage.show();
@@ -36,6 +36,10 @@ public class NewFXMain extends Application {
 
             ex.printStackTrace();
         }
+    }
+    
+    public ControllerWeather getControllerWeather (){
+        return controllerWeather;
     }
 
     public static void main(String[] args) {
