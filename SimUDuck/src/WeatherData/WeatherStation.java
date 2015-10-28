@@ -5,21 +5,36 @@
  */
 package WeatherData;
 
+import javafx.application.Application;
+import javafx.stage.Stage;
+
 /**
  *
  * @author h
  */
-public class WeatherStation {
-    public static void main (String [] args) {
-    WeatherData weatherData = new WeatherData();
+public class WeatherStation extends Application {
+WeatherData weatherData;
+    public static void main(String[] args) {
+        launch(args);
+    }
+
+    @Override
+    public void start(Stage stage) throws Exception {
+        initApp();
+        NewFXMain myStage = new NewFXMain();
+        myStage.start(stage);
+        ControllerWeather controller = myStage.getControllerWeather();
+        controller.subscribe(weatherData);
+        weatherData.setMesurements(79, 90, 29.2f);
+    }
     
-    CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
-    
-    
-    weatherData.setMesurements(80, 65, 30.4f);
-    weatherData.setMesurements(82, 70, 29.2f);
-    weatherData.setMesurements(78, 90, 29.2f);
-    
+    private void initApp(){
+        weatherData = new WeatherData();
+        CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
+        
+        weatherData.setMesurements(80, 65, 30.4f);
+        weatherData.setMesurements(82, 70, 29.2f);
+        weatherData.setMesurements(78, 90, 29.2f);
     }
     
 }
