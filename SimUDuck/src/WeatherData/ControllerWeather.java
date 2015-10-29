@@ -31,7 +31,7 @@ public class ControllerWeather implements Initializable, Observer, DisplayElemen
     @Override
     public void update(float temperature, float humidity, float pressure) {
         LabelTemp.setText(Float.toString(temperature));
-        //LabelHum.setText(Float.toString(humidity));
+        LabelHum.setText(Float.toString(humidity));
         
     }
 
