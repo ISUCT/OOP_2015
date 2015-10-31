@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+  <children>
+    <Text fill="BLACK" fontSmoothingType="LCD" layoutX="257.0" layoutY="108.0" scaleX="5.428330657271292" scaleY="7.374362493879314" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello World" textAlignment="CENTER">
+      <font>
+        <Font name="Purisa Bold" size="13.0" />
+      </font>
+    </Text>
+    <Button fx:id="myButton" blendMode="DIFFERENCE" cache="false" cancelButton="false" defaultButton="false" layoutX="189.0" mnemonicParsing="false" prefHeight="115.0" prefWidth="222.0" rotate="180.0" text="Push me!" textAlignment="LEFT" textFill="BLACK" textOverrun="ELLIPSIS" wrapText="false" AnchorPane.bottomAnchor="85.0" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0000999999975" prefWidth="358.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WeatherData.ControllerWeather">
+  <children>
+    
+    <Label fx:id="LabelTemp" layoutX="224.0" layoutY="64.0" prefHeight="35.0" prefWidth="104.0" />
+    <Label fx:id="LabelHum" layoutX="224.0" layoutY="164.0" prefHeight="35.0" prefWidth="104.0" />
+  </children>
+</AnchorPane>
