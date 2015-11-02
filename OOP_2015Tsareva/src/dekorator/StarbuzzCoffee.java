@@ -1,0 +1,56 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package dekorator;
+
+/**
+ *
+ * @author stud_17
+ */
+public class StarbuzzCoffee {
+
+    public static void main(String args[]) {
+        Beverage beverage = new Espresso();
+        System.out.println(beverage.getDescription() + " $" + beverage.cost());
+
+        Beverage beverage2 = new DarkRoast();
+        beverage2 = new Mocha(beverage2);
+        beverage2 = new Mocha(beverage2);
+        beverage2 = new Whip(beverage2) {
+            @Override
+            public double cost() {
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+        };
+        System.out.println(beverage2.getDescription() + " $" + beverage2.cost());
+
+        Beverage beverage3 = new HouseBlend();
+        beverage3 = new Soy(beverage3) {
+            @Override
+            public double cost() {
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+        };
+        beverage3 = new Mocha(beverage3);
+        beverage3 = new Whip(beverage3) {
+            @Override
+            public double cost() {
+                throw new UnsupportedOperationException("Not supported yet.");
+            }
+        };
+        System.out.println(beverage3.getDescription() + " $" + beverage2.cost());
+    }
+
+    private static abstract class Whip extends Beverage {
+
+        public Whip(Beverage beverage2) {
+        }
+    }
+
+    private static abstract class Soy extends Beverage {
+
+        public Soy(Beverage beverage3) {
+        }
+    }
+}
