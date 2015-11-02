@@ -17,12 +17,9 @@ import javafx.scene.layout.Pane;
  *
  * @author h
  */
-public class NewFXMain extends Application  {
-    
+public class NewFXMain extends Application {
 
       // Value injected by FXMLLoader
-
-
     @Override
     public void start(Stage primaryStage) {
 //        Button btn = new Button();
@@ -48,28 +45,19 @@ public class NewFXMain extends Application  {
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(NewFXMain.class.getResource("demo1.fxml"));
             Pane rootLayout = (Pane) loader.load();
-            
-            Scene scene = new Scene (rootLayout);
+
+            Scene scene = new Scene(rootLayout);
             primaryStage.setScene(scene);
             primaryStage.show();
-            
-    } catch(IOException ex) {
-        
-        ex.printStackTrace();
-    }}
-    
-        public static void main(String[] args) {
-        launch(args);
+
+        } catch (IOException ex) {
+
+            ex.printStackTrace();
         }
-        
+    }
+
+    public static void main(String[] args) {
+        launch(args);
+    }
+
 }
-        
-
-    
-
-
-    
-    
- 
-
-

@@ -21,46 +21,37 @@ import javafx.scene.control.Button;
  * @author h
  */
 public class SimpleController implements Initializable, Observer, DisplayElement {
+
     public static void main(String[] args) {
         launch(args);
-        }
-    
-    @FXML 
+    }
+
+    @FXML
     private Button myButton;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-         assert myButton !=null : "fx:id was not injected";
-         
-         myButton.setOnAction (new EventHandler<ActionEvent>() {
+        assert myButton != null : "fx:id was not injected";
 
-             @Override
-             public void handle(ActionEvent event) {
-                 System.out.println("Hello World");
-             }
-         
-         });
-         
-             
-    
+        myButton.setOnAction(new EventHandler<ActionEvent>() {
+
+            @Override
+            public void handle(ActionEvent event) {
+                System.out.println("Hello World");
+            }
+
+        });
+
     }
 
     @Override
     public void update(float temp, float humidity, float pressure) {
-       
+
     }
 
     @Override
     public void display() {
-        
-    }
-         
-         
-         
-         
-        
-        
-        
-    }
-    
 
+    }
+
+}

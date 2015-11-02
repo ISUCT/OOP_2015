@@ -17,33 +17,34 @@ import javafx.scene.control.Label;
  * @author h
  */
 public class ControllerWeather implements Initializable, Observer, DisplayElement {
+
     private Subject weatherData;
-    
-    @FXML 
+
+    @FXML
     private Label LabelTemp;
     private Label LabelHum;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-           System.out.println("Here");    
+        System.out.println("Here");
     }
 
     @Override
     public void update(float temperature, float humidity, float pressure) {
         LabelTemp.setText(Float.toString(temperature));
         LabelHum.setText(Float.toString(humidity));
-        
+
     }
 
     @Override
     public void display() {
-        
+
     }
-    
+
     public static void main(String[] args) {
         launch(args);
-        }
-    
+    }
+
     public void subscribe(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
