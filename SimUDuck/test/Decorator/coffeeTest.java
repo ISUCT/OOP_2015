@@ -50,8 +50,23 @@ public class coffeeTest {
         
         beverage5 = new Milk(beverage5);
         beverage5.cost();
-        assertEquals(1.09, beverage5.cost(), 0.01);
+        assertEquals(1.19, beverage5.cost(), 0.01);
+        
+        
     
+    
+    }
+    
+    @Test
+    public void coffeeAndWhipAndSoyTest(){
+        Beverage beverage6 = new Decaf();
+        beverage6 = new Whip(beverage6);
+        beverage6.cost();
+        assertEquals(1.15, beverage6.cost(), 0.01);
+        
+        beverage6 = new Soy(beverage6);
+        beverage6.cost();
+        assertEquals(2.23, beverage6.cost(), 0.01);
     
     }
     
