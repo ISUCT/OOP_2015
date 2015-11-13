@@ -9,11 +9,14 @@ package dekorator;
  * @author stud_17
  */
 public class HouseBlend extends Beverage {
+
     public HouseBlend() {
-    description = "House Blend Coffe";
+        description = "House Blend Coffe";
     }
-    public double cost(){
-    return .89;
+
+    @Override
+    public double cost() {
+        return .89;
     }
-    
+
 }

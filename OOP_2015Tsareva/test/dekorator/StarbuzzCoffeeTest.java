@@ -69,7 +69,7 @@ public class StarbuzzCoffeeTest {
     public void espressoSoy() {
         Beverage beverage = new Espresso();
         beverage = new Soy(beverage);
-        assertEquals(2.09, beverage.cost(), 0.01);
+        assertEquals(2.11, beverage.cost(), 0.01);
     }
     
 //    Beverage beverage2 = new DarcRoast();
