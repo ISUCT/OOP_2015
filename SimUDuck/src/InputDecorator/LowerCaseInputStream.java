@@ -15,9 +15,8 @@ public class LowerCaseInputStream extends FilterInputStream {
 
 //    public LowerCaseInputStream(InputStream in) {
 //        super(in);
-//}
+//    }
 //
-//    
 //    @Override
 //    public int read() throws IOException {
 //        int c = super.read();
@@ -25,7 +24,6 @@ public class LowerCaseInputStream extends FilterInputStream {
 //
 //    }
 //
-//    
 //    public int read(byte[] b, int offset, int len) throws IOException {
 //        int result = super.read(b, offset, len);
 //        for (int i = offset; i < offset + result; i++) {

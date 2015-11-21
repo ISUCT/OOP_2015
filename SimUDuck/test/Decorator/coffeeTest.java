@@ -66,7 +66,7 @@ public class coffeeTest {
         
         beverage6 = new Soy(beverage6);
         beverage6.cost();
-        assertEquals(2.23, beverage6.cost(), 0.01);
+        assertEquals(1.3, beverage6.cost(), 0.01);
     
     }
     
