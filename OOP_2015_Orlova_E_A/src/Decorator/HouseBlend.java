@@ -9,15 +9,14 @@ package Decorator;
  *
  * @author h
  */
-public abstract class Beverage {
+public class HouseBlend extends Beverage {
 
-    String description = "Unknown Beverage";
-
-    public String getDescription() {
-        return description;
+    public HouseBlend() {
+        description = "House Blend Cofee";
 
     }
 
-    public abstract double cost();
-
+    public double cost() {
+        return .89;
+    }
 }

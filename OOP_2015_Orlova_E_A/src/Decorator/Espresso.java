@@ -1,13 +1,22 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package Decorator;
 
 /**
  *
- * @author stud_17
+ * @author h
  */
-public class Espresso e {
-    
+public class Espresso extends Beverage {
+
+    public Espresso() {
+        description = "Espresso";
+    }
+
+    public double cost() {
+        return 1.99;
+    }
+
 }

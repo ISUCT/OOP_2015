@@ -3,21 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Decorator;
+package WeatherData;
 
 /**
  *
  * @author h
  */
-public abstract class Beverage {
-
-    String description = "Unknown Beverage";
-
-    public String getDescription() {
-        return description;
-
-    }
-
-    public abstract double cost();
-
+public interface Observer {
+    public void update(float temp, float humidity, float pressure);
+    
 }
