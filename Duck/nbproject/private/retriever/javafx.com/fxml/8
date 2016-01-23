@@ -1,0 +1,54 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Веб-сервер UserGate</title>
+<link href="http://192.168.100.1:8080/styles.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+<table class='mtb'>
+	<tr>
+		<td align='center'>
+		<div class='ddlg'>
+		<div class='ldlg'>
+			<div class='dlt'></div>
+			<div class='dlb'></div>
+		<div class='rdlg'>
+			<div class='drb'></div>
+			<div class='drt'></div>
+			
+			<div class='dbt'></div>
+			<div class='dbb'></div>
+			
+			<div class='tophead'>
+			<a href="http://192.168.100.1:8080/">
+				<img title="UserGate Proxy & Firewall" alt="UserGate Proxy & Firewall" src="http://192.168.100.1:8080/images/logo.gif" id="Logotype"/>
+			</a>
+			</div>
+			<div class='delim'>
+				<div class='delim-l'> </div>
+				<div class='delim-m'></div>
+				<div class='delim-r'> </div>
+			</div>
+
+			<div class='dreport'>
+				<div class='rtitle'><p>Сообщение сервера UserGate:</p></div>
+				<div class='rtext'>
+				<b>Ошибка базы данных. Обратитесь к администратору.</b>
+
+				<br/><br/>
+				05.10.2015, 14:58.29
+				<br/>
+				</div>
+
+			</div> 
+			<div class='dcpr'><div>Copyright 2002-2009 by Entensys Company</div></div>
+ 		</div>
+ 		</div>
+		</div>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

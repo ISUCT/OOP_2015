@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/h/123/OOP_2015/Duck/src/observer/demo1.fxml</file>
+            <file>file:/home/h/123/OOP_2015/Duck/src/WeatherData/Subject.java</file>
+            <file>file:/home/h/123/OOP_2015/Duck/src/WeatherData/WeatherStation.java</file>
+            <file>file:/home/h/123/OOP_2015/Duck/src/observer/NewFXMain.java</file>
+            <file>file:/home/h/123/OOP_2015/Duck/src/WeatherData/DisplayElement.java</file>
+            <file>file:/home/h/123/OOP_2015/Duck/src/MiniClassDuckSimulator.java</file>
+            <file>file:/home/h/123/OOP_2015/Duck/src/WeatherData/CurrentConditionsDisplay.java</file>
+            <file>file:/home/h/123/OOP_2015/Duck/src/WeatherData/Observer.java</file>
+            <file>file:/home/h/123/OOP_2015/Duck/src/WeatherData/ThirdPartyDisplay.java</file>
+            <file>file:/home/h/123/OOP_2015/Duck/src/observer/SimpleController.java</file>
+        </group>
+    </open-files>
+</project-private>
